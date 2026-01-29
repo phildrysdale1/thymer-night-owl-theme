@@ -142,8 +142,11 @@ html[data-theme="basic-dark-night-owl"] {
     /* ------------------------------------------- */
     --ed-quote-border-color: #A599E9;
 
-    --ed-code-border: transparent;
-    --ed-code-bg: rgba(11, 41, 66, 0.4);
+    --ed-container-border-color: rgba(99, 119, 119, 0.25); /* #637777 */
+    --ed-container-bg-color:     rgba(29, 59, 83, 0.08);   /* #1d3b53 */
+    
+    --ed-code-bg:                rgba(99, 119, 119, 0.25); /* #637777 */
+    --ed-code-border:            rgba(29, 59, 83, 0.08);   /* #1d3b53 */
 
     /* Inline code */
     .lineitem-code {
@@ -228,7 +231,7 @@ html[data-theme="basic-dark-night-owl"] {
 /* ------------------------------------------- */
 /* Night Owl Light - Clean Light               */
 /* ------------------------------------------- */
-html[data-theme="basic-white-night-owl"] {
+html[data-theme="basic-light-night-owl"] {
     color-scheme: light;
 
     /* ------------------------------------------- */
@@ -356,8 +359,11 @@ html[data-theme="basic-white-night-owl"] {
     /* ------------------------------------------- */
     --ed-quote-border-color: #994cc3;
 
-    --ed-code-border: transparent;
-    --ed-code-bg: rgba(224, 224, 224, 0.35);
+    --ed-container-border-color: rgba(224, 231, 234, 0.25); /* #E0E7EA */
+    --ed-container-bg-color:     rgba(64, 63, 83, 0.08);    /* #403f53 */
+    
+    --ed-code-bg:                rgba(224, 231, 234, 0.25); /* #E0E7EA */
+    --ed-code-border:            rgba(64, 63, 83, 0.08);    /* #403f53 */
 
     /* Inline code */
     .lineitem-code {
