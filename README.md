@@ -9,8 +9,9 @@ If you add any areas I've missed please do submit a PR or tag me in the Discord 
 3. Press Ctrl + P again > Set Theme > Select the desired theme.
 
 ### Light mode
-<img width="1706" height="1369" alt="image" src="https://github.com/user-attachments/assets/c65dabbc-49fe-4ac4-b10f-26912ba2f1b7" />
+<img width="1713" height="1376" alt="image" src="https://github.com/user-attachments/assets/27bb826b-2f4a-4757-857a-163d5f175fe6" />
 
 ### Dark mode
-<img width="1705" height="1368" alt="image" src="https://github.com/user-attachments/assets/58d75f1d-ba45-43c5-9655-5b6d6a5fe955" />
+<img width="1712" height="1375" alt="image" src="https://github.com/user-attachments/assets/1c4b57e8-9f14-4f1b-866f-a8b3e958a5d3" />
+
 
