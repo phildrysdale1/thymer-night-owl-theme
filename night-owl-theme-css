@@ -1,0 +1,440 @@
+/*
+* Night Owl Theme for Thymer
+* Based on Night Owl (Dark) + Night Owl Light palettes provided
+*
+* Key Palette (from the provided Night Owl files):
+* - Dark base: #011627 (bg), #d6deeb (fg), accents: #7e57c2 (purple), #82AAFF (blue),
+*   #7fdbca (teal/cyan), #22da6e (green), #F78C6C (orange), #EF5350 (red), #637777 (comment)
+* - Light base: #FBFBFB / #F0F0F0 (bg), #403f53 (fg), accents: #2AA298 (teal), #994cc3 (purple),
+*   #4876d6 (blue), #aa0982 (magenta), #daaa01 (yellow), #de3d3b (red)
+*/
+
+/* ------------------------------------------- */
+/* Night Owl - Deep Dark                       */
+/* ------------------------------------------- */
+html[data-theme="basic-dark-night-owl"] {
+    color-scheme: dark;
+
+    /* ------------------------------------------- */
+    /* 1. Headings - Soft Lavender                */
+    /* ------------------------------------------- */
+    .heading-h1,
+    .heading-h2,
+    .heading-h3,
+    .heading-h4,
+    .heading-h5,
+    .heading-h6 {
+        color: #A599E9;
+    }
+
+    --text-base-size: 16px;
+
+    /* ------------------------------------------- */
+    /* 2. Background Colors - Night Owl Blues     */
+    /* ------------------------------------------- */
+    --color-bg-50: #5f7e97;
+    --color-bg-100: #2C3043;
+    --color-bg-150: #0e293f;
+    --color-bg-200: #0b2942;
+    --color-bg-300: #0b253a;
+    --color-bg-400: #011627;
+    --color-bg-500: #011627;
+    --color-bg-600: #011627;
+    --color-bg-700: #01111d;
+    --color-bg-800: #0b2942; /* Sidebar - background light */
+    --color-bg-900: #011627;  /* Main window - main background */
+    --color-bg-950: #010b14;
+    --color-bg-500-50: rgba(1, 22, 39, 0.5);
+    --color-bg-950-50: rgba(1, 11, 20, 0.65);
+
+    /* ------------------------------------------- */
+    /* 3. Primary Colors - Night Owl Purple       */
+    /* ------------------------------------------- */
+    --color-primary-50: #f2ecff;
+    --color-primary-100: #e1d6ff;
+    --color-primary-200: #c7b7ff;
+    --color-primary-300: #ab97ff;
+    --color-primary-400: #7e57c2; /* Night Owl Purple */
+    --color-primary-500: #6d46b6;
+    --color-primary-600: #5f39aa;
+    --color-primary-700: #522f9a;
+    --color-primary-800: #45268a;
+    --color-primary-900: #381d7a;
+    --color-primary-950: #261358;
+    --color-primary-400-70: rgba(126, 87, 194, 0.7);
+    --color-primary-950-20: rgba(38, 19, 88, 0.2);
+    --color-primary-text-100: #011627;
+
+    /* ------------------------------------------- */
+    /* 4. Text & Icons - Night Owl Foreground     */
+    /* ------------------------------------------- */
+    --color-text-50: #ffffff;
+    --color-text-100: #d6deeb;
+    --color-text-200: #c5d1e3;
+    --color-text-300: #b3c3dc;
+    --color-text-400: #9fb2ce;
+    --color-text-500: #89a4bb;
+    --color-text-600: #5f7e97;
+    --color-text-700: #A599E9;
+    --color-text-800: #d6deeb;
+    --color-text-900: #0b2942;
+    --color-text-950: #637777;
+
+    /* ------------------------------------------- */
+    /* 5. Semantic Colors - Night Owl Accents     */
+    /* ------------------------------------------- */
+    --text-ok: #22da6e;
+    --text-status-online: #22da6e;
+    --text-warning: #FFCA28;
+    --text-error: #EF5350;
+    --bg-alert: #EF5350;
+    --fg-alert: #d6deeb;
+
+    /* ------------------------------------------- */
+    /* 6. Links, Tags & Mentions - Themed         */
+    /* ------------------------------------------- */
+    --link-color: #82AAFF;
+    --link-hover-color: #a2bffc;
+    --ed-link-color: #82AAFF;
+    --ed-link-hover-color: #a2bffc;
+
+    --ed-hashtag-color: #C792EA;
+    --ed-hashtag-bg: rgba(199, 146, 234, 0.15);
+
+    --ed-mention-color: #7fdbca;
+    --ed-mention-bg: rgba(127, 219, 202, 0.15);
+    --ed-mention-hover-bg: rgba(127, 219, 202, 0.25);
+    --ed-mention-hover-color: #caece6;
+
+    --ed-datetime-color: #F78C6C;
+    --ed-datetime-bg: rgba(247, 140, 108, 0.15);
+
+    /* ------------------------------------------- */
+    /* 7. Tasks & Checkboxes - Purple             */
+    /* ------------------------------------------- */
+    --ed-check-div-border: #7e57c2;
+    --ed-check-div-hover-border: #A599E9;
+    --ed-check-done-bg: #7e57c2;
+    --ed-check-done-fg: #d6deeb;
+
+    /* Done task styling */
+    .listitem.listitem-task.state-done .lineitem-text {
+        color: #5f7e97 !important;
+        text-decoration-color: #5f7e97 !important;
+        opacity: 1 !important;
+    }
+
+    /* ------------------------------------------- */
+    /* 8. Selection & Caret                       */
+    /* ------------------------------------------- */
+    --selection-bg: rgba(29, 59, 83, 0.8);
+    --selection-fg: #d6deeb;
+    --ed-selection-self-bg: rgba(29, 59, 83, 0.8);
+    --ed-selection-blurred-bg: rgba(29, 59, 83, 0.5);
+
+    --ed-caret-self-radius: 2px;
+    --ed-caret-self-border-width: 0px;
+    --ed-caret-self-background: color-mix(in srgb, #7e57c2 70%, transparent);
+    --ed-caret-self-box-shadow: 0 0 2px #7e57c2;
+
+    /* ------------------------------------------- */
+    /* 9. Quotes & Code - Dark Containers         */
+    /* ------------------------------------------- */
+    --ed-quote-border-color: #A599E9;
+
+    --ed-code-border: transparent;
+    --ed-code-bg: rgba(11, 41, 66, 0.4);
+
+    /* Inline code */
+    .lineitem-code {
+        background-color: var(--color-bg-200) !important;
+        color: #F78C6C !important;
+        border-radius: 4px;
+        padding: 2px 5px;
+        font-family: var(--font-monospace);
+    }
+
+    /* Note blocks */
+    --ed-block-note-bg: rgba(165, 153, 233, 0.1);
+    --ed-block-note-border: #A599E9;
+
+    /* ------------------------------------------- */
+    /* 10. UI Components - Dark Interface         */
+    /* ------------------------------------------- */
+    --cards-bg: #011627;
+    --cards-hover-bg: #0b2942;
+    --cards-border-color: transparent;
+    --cards-border-color-focused: transparent;
+
+    --side-bg-active-focus: #7e57c2;
+    --side-fg-active-focus: #d6deeb;
+    --sidebar-bg-hover: #0b2942;
+    --sidebar-border-color: transparent;
+
+    --cmdpal-bg-color: #011627;
+    --cmdpal-selected-bg-color: #7e57c2;
+    --cmdpal-selected-fg-color: #d6deeb;
+    --cmdpal-hover-bg-color: #0b2942;
+    --cmdpal-border-color: transparent;
+
+    --input-bg-color: #0b253a;
+    --input-border-color: #5f7e97;
+    --input-border-focus: 1px solid #7e57c2;
+    --input-border-shadow: 0 0 8px rgba(126, 87, 194, 0.4);
+
+    --button-primary-bg-color: #7e57c2;
+    --button-primary-fg-color: #d6deeb;
+    --button-primary-bg-hover-color: #A599E9;
+    --button-bg-color: #0b2942;
+    --button-border-color: transparent;
+    --button-bg-hover-color: #1d3b53;
+
+    --color-shadow: rgba(1, 11, 20, 0.5);
+    --color-shadow-cards: 0 4px 6px rgba(1, 11, 20, 0.4);
+    --color-shadow-hover: 0 6px 12px rgba(1, 11, 20, 0.5);
+
+    --logo-color: #7e57c2;
+    --logo-glow-shadow:
+        0 0 15px rgba(126, 87, 194, 0.4),
+        0 0 30px rgba(126, 87, 194, 0.2);
+
+    /* Enums - Night Owl Palette */
+    --enum-red-bg: rgba(239, 83, 80, 0.25);
+    --enum-red-fg: #EF5350;
+    --enum-orange-bg: rgba(247, 140, 108, 0.25);
+    --enum-orange-fg: #F78C6C;
+    --enum-yellow-bg: rgba(255, 202, 40, 0.25);
+    --enum-yellow-fg: #FFCA28;
+    --enum-green-bg: rgba(34, 218, 110, 0.25);
+    --enum-green-fg: #22da6e;
+    --enum-cyan-bg: rgba(127, 219, 202, 0.25);
+    --enum-cyan-fg: #7fdbca;
+    --enum-blue-bg: rgba(130, 170, 255, 0.25);
+    --enum-blue-fg: #82AAFF;
+    --enum-purple-bg: rgba(199, 146, 234, 0.25);
+    --enum-purple-fg: #C792EA;
+    --enum-pink-bg: rgba(255, 88, 116, 0.25);
+    --enum-pink-fg: #ff5874;
+
+    --prop-border-focused: #011627;
+    --prop-bg-focused: rgba(126, 87, 194, 0.3);
+    --shadow-sticky-row: 0 6px 12px rgba(0, 0, 0, 0);
+    --ed-drag-handle-color: #7e57c2;
+    --ed-drag-handle-hover-border: #A599E9;
+
+    --gradient-scrim: none;
+}
+
+/* ------------------------------------------- */
+/* Night Owl Light - Clean Light               */
+/* ------------------------------------------- */
+html[data-theme="basic-white-night-owl"] {
+    color-scheme: light;
+
+    /* ------------------------------------------- */
+    /* 1. Headings - Night Owl Purple             */
+    /* ------------------------------------------- */
+    .heading-h1,
+    .heading-h2,
+    .heading-h3,
+    .heading-h4,
+    .heading-h5,
+    .heading-h6 {
+        color: #994cc3;
+    }
+
+    /* ------------------------------------------- */
+    /* 2. Background Colors - Soft Grays          */
+    /* ------------------------------------------- */
+    --color-bg-50: #93A1A1;
+    --color-bg-100: #E0E7EA;
+    --color-bg-150: #F6F6F6;
+    --color-bg-200: #F0F0F0;
+    --color-bg-300: #FBFBFB;
+    --color-bg-400: #FBFBFB;
+    --color-bg-500: #FBFBFB;
+    --color-bg-600: #FBFBFB;
+    --color-bg-700: #FFFFFF;
+    --color-bg-800: #F0F0F0; /* Sidebar - light */
+    --color-bg-900: #FBFBFB; /* Main window - light */
+    --color-bg-950: #FFFFFF;
+    --color-bg-500-50: rgba(251, 251, 251, 0.5);
+    --color-bg-950-50: rgba(255, 255, 255, 0.65);
+
+    /* ------------------------------------------- */
+    /* 3. Primary Colors - Night Owl Teal         */
+    /* ------------------------------------------- */
+    --color-primary-50: #e7f7f5;
+    --color-primary-100: #c6efea;
+    --color-primary-200: #9fe3db;
+    --color-primary-300: #6fd4c9;
+    --color-primary-400: #2AA298; /* Night Owl Teal */
+    --color-primary-500: #238e85;
+    --color-primary-600: #1d7d76;
+    --color-primary-700: #176c67;
+    --color-primary-800: #115b57;
+    --color-primary-900: #0b4a47;
+    --color-primary-950: #053332;
+    --color-primary-400-70: rgba(42, 162, 152, 0.7);
+    --color-primary-950-20: rgba(5, 51, 50, 0.2);
+    --color-primary-text-100: #FBFBFB;
+
+    /* ------------------------------------------- */
+    /* 4. Text & Icons - Ink Foreground           */
+    /* ------------------------------------------- */
+    --color-text-50: #111111;
+    --color-text-100: #403f53;
+    --color-text-200: #4a4960;
+    --color-text-300: #58576f;
+    --color-text-400: #6a6883;
+    --color-text-500: #7a7894;
+    --color-text-600: #93A1A1;
+    --color-text-700: #994cc3;
+    --color-text-800: #403f53;
+    --color-text-900: #FBFBFB;
+    --color-text-950: #93A1A1;
+
+    /* ------------------------------------------- */
+    /* 5. Semantic Colors - Light Accents         */
+    /* ------------------------------------------- */
+    --text-ok: #08916a;
+    --text-status-online: #08916a;
+    --text-warning: #daaa01;
+    --text-error: #de3d3b;
+    --bg-alert: #f76e6e;
+    --fg-alert: #FBFBFB;
+
+    /* ------------------------------------------- */
+    /* 6. Links, Tags & Mentions - Themed         */
+    /* ------------------------------------------- */
+    --link-color: #994cc3;
+    --link-hover-color: #288ed7;
+    --ed-link-color: #994cc3;
+    --ed-link-hover-color: #288ed7;
+
+    --ed-hashtag-color: #4876d6;
+    --ed-hashtag-bg: rgba(72, 118, 214, 0.1);
+
+    --ed-mention-color: #0c969b;
+    --ed-mention-bg: rgba(12, 150, 155, 0.1);
+    --ed-mention-hover-bg: rgba(12, 150, 155, 0.2);
+    --ed-mention-hover-color: #2AA298;
+
+    --ed-datetime-color: #aa0982;
+    --ed-datetime-bg: rgba(170, 9, 130, 0.1);
+
+    /* ------------------------------------------- */
+    /* 7. Tasks & Checkboxes - Teal               */
+    /* ------------------------------------------- */
+    --ed-check-div-border: #2AA298;
+    --ed-check-div-hover-border: #0c969b;
+    --ed-check-done-bg: #2AA298;
+    --ed-check-done-fg: #F0F0F0;
+
+    /* Done task styling */
+    .listitem.listitem-task.state-done .lineitem-text {
+        color: #93A1A1 !important;
+        text-decoration-color: #93A1A1 !important;
+        opacity: 1 !important;
+    }
+
+    /* ------------------------------------------- */
+    /* 8. Selection & Caret                       */
+    /* ------------------------------------------- */
+    --selection-bg: rgba(224, 224, 224, 0.8);
+    --selection-fg: #403f53;
+    --ed-selection-self-bg: rgba(224, 224, 224, 0.8);
+    --ed-selection-blurred-bg: rgba(224, 224, 224, 0.5);
+
+    --ed-caret-self-radius: 2px;
+    --ed-caret-self-border-width: 0px;
+    --ed-caret-self-background: color-mix(in srgb, #2AA298 70%, transparent);
+    --ed-caret-self-box-shadow: 0 0 2px #2AA298;
+
+    /* ------------------------------------------- */
+    /* 9. Quotes & Code - Light Containers        */
+    /* ------------------------------------------- */
+    --ed-quote-border-color: #994cc3;
+
+    --ed-code-border: transparent;
+    --ed-code-bg: rgba(224, 224, 224, 0.35);
+
+    /* Inline code */
+    .lineitem-code {
+        background-color: var(--color-bg-200) !important;
+        color: #aa0982 !important;
+        border-radius: 4px;
+        padding: 2px 5px;
+        font-family: var(--font-monospace);
+    }
+
+    /* Note blocks */
+    --ed-block-note-bg: rgba(153, 76, 195, 0.08);
+    --ed-block-note-border: #994cc3;
+
+    /* ------------------------------------------- */
+    /* 10. UI Components - Light Interface        */
+    /* ------------------------------------------- */
+    --cards-bg: #FBFBFB;
+    --cards-hover-bg: #F0F0F0;
+    --cards-border-color: transparent;
+    --cards-border-color-focused: transparent;
+
+    --side-bg-active-focus: #2AA298;
+    --side-fg-active-focus: #F0F0F0;
+    --sidebar-bg-hover: #d3e8f8;
+    --sidebar-border-color: transparent;
+
+    --cmdpal-bg-color: #F0F0F0;
+    --cmdpal-selected-bg-color: #2AA298;
+    --cmdpal-selected-fg-color: #F0F0F0;
+    --cmdpal-hover-bg-color: #d3e8f8;
+    --cmdpal-border-color: transparent;
+
+    --input-bg-color: #F0F0F0;
+    --input-border-color: #d9d9d9;
+    --input-border-focus: 1px solid #2AA298;
+    --input-border-shadow: 0 0 8px rgba(42, 162, 152, 0.3);
+
+    --button-primary-bg-color: #2AA298;
+    --button-primary-fg-color: #F0F0F0;
+    --button-primary-bg-hover-color: #0c969b;
+    --button-bg-color: #F6F6F6;
+    --button-border-color: transparent;
+    --button-bg-hover-color: #E0E7EA;
+
+    --color-shadow: rgba(0, 0, 0, 0.12);
+    --color-shadow-cards: 0 4px 6px rgba(0, 0, 0, 0.08);
+    --color-shadow-hover: 0 6px 12px rgba(0, 0, 0, 0.15);
+
+    --logo-color: #2AA298;
+    --logo-glow-shadow:
+        0 0 15px rgba(42, 162, 152, 0.3),
+        0 0 30px rgba(42, 162, 152, 0.2);
+
+    /* Enums - Night Owl Light Palette */
+    --enum-red-bg: rgba(222, 61, 59, 0.15);
+    --enum-red-fg: #de3d3b;
+    --enum-orange-bg: rgba(201, 103, 101, 0.15);
+    --enum-orange-fg: #c96765;
+    --enum-yellow-bg: rgba(218, 170, 1, 0.15);
+    --enum-yellow-fg: #daaa01;
+    --enum-green-bg: rgba(8, 145, 106, 0.15);
+    --enum-green-fg: #08916a;
+    --enum-cyan-bg: rgba(12, 150, 155, 0.15);
+    --enum-cyan-fg: #0c969b;
+    --enum-blue-bg: rgba(72, 118, 214, 0.15);
+    --enum-blue-fg: #4876d6;
+    --enum-purple-bg: rgba(153, 76, 195, 0.15);
+    --enum-purple-fg: #994cc3;
+    --enum-pink-bg: rgba(170, 9, 130, 0.15);
+    --enum-pink-fg: #aa0982;
+
+    --prop-border-focused: #FBFBFB;
+    --prop-bg-focused: rgba(42, 162, 152, 0.15);
+    --shadow-sticky-row: 0 6px 12px rgba(0, 0, 0, 0);
+    --ed-drag-handle-color: #2AA298;
+    --ed-drag-handle-hover-border: #0c969b;
+
+    --gradient-scrim: none;
+}
